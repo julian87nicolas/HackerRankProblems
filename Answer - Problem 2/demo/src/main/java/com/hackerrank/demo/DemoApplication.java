@@ -22,7 +22,7 @@ public class DemoApplication {
 	public static int countDuplicate(List<Integer> numbers) {
 		List<Integer> sortedNumbers = numbers.stream().sorted().collect(Collectors.toList());
 		Integer repeatedValues = 0;
-		Integer lastValue = null; //= numbers.get(0);
+		Integer lastValue = null;
 		for (int i = 0; i < sortedNumbers.size() - 1; i++) {
 			if(sortedNumbers.get(i) == lastValue) {
 				continue;
